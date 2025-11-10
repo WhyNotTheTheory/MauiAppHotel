@@ -1,5 +1,4 @@
-﻿
-using MauiAppHotel.Models;
+﻿using MauiAppHotel.Models;
 
 namespace MauiAppHotel
 {
@@ -37,7 +36,8 @@ namespace MauiAppHotel
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.ContratacaoHospedagem());
+            // 👇 Agora a tela BemVindo é a primeira a abrir
+            MainPage = new NavigationPage(new Views.BemVindo());
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
